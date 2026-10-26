@@ -1,0 +1,19 @@
+[Unit]
+Description=真人帮 Node.js service
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/opt/zhenrenbang/Back
+EnvironmentFile=/opt/zhenrenbang/Back/.env
+ExecStart=/usr/bin/node /opt/zhenrenbang/Back/src/server.mjs
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ReadWritePaths=/opt/zhenrenbang/Back/data
+
+[Install]
+WantedBy=multi-user.target

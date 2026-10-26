@@ -1,0 +1,11 @@
+{
+  "name": "真人帮",
+  "short_name": "真人帮",
+  "description": "课程演示：AI 情境卡、案例教程、真人求助、接单、文字与双人视频。",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fafaf7",
+  "theme_color": "#2500ff",
+  "icons": [{"src":"/skills-icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
